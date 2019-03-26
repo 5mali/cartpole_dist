@@ -4,5 +4,7 @@ seedlist=(280 271 6738 4323 9295 1973 334 9213 7285 3121 394 5987 9588 9086 7544
 
 for seed in "${seedlist[@]}"
 do
-	python ./ddqn_script.py $seed
+	rm *.npy
+    rm *.pt
+    python ./ddqn_script.py $seed
 done
